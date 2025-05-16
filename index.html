@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feadback form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📋 Customer Feedback Survey</h1>
+
+    <form action="">
+        <!-- name -->
+        <label for="name">Full Name</label> 
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- email -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- gender -->
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- favorite dish -->
+        <label for="dish">Favorite Dish</label>
+        <select name="dish" id="dish" required>
+            <option value="">--please choose--</option>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="pasta">Pasta</option>
+        </select><br><br>
+
+        <!-- feedback -->
+        <label for="feedback">Feedback</label>
+        <textarea name="feedback" id="feedback" rows="5" cols="30" required></textarea><br><br>
+
+        <!-- newsletter checkbox -->
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="checkbox">Subscribe to our newsletter</label><br><br>
+
+        <!-- submit button -->
+        <input type="submit" value="Submit Feedback">
+
+    </form>
+</body>
+</html>
